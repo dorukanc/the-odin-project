@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Fundamentals - Links and Images</title>
+</head>
+<body>
+    <h1>Homepage</h1>
+    <p> this link opens in the same tab
+        <a href="https://www.theodinproject.com/about">click here</a>
+    </p>
+
+    <p> this link opens in a new tab, use rel="noopener noreferrer" for security reasons
+        <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">click here</a>    
+    </p>
+    <a href="pages/about.html">about page</a>
+    <img src="images/cowboybebop.jpg">
+    <h2>notes about links</h2>
+    <ul>
+        <li>noopener prevents the new page from being able to access the window.opener property and ensures it runs in a separate process.</li>
+        <li>noreferrer has the same effect as noopener but also prevents the Referer header from being sent to the new page.</li>
+        <li>so noreferrer has both security and privacy benefits</li>
+    </ul>
+</body>
+</html>
