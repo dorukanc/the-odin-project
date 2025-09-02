@@ -1,0 +1,21 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.title{
+    border: 5px solid black;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: azure;
+}
+
+.content{
+    margin: 30px;
+}
+
+ul{
+    border: 2px dashed rgb(34, 34, 34);
+    border-radius: 12px;
+    padding: 12px 24px;
+    list-style-type: square;
+}
