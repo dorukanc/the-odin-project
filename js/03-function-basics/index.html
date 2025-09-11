@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function Basics</title>
+</head>
+<body>
+    <script>
+
+        // define functions 
+
+        function add7(number){
+            return number + 7;
+        } 
+
+        function multiply(nu1, nu2){
+            return nu1 * nu2;
+        }
+
+        function capitalize(text){
+        // this func capitalize the only the first letter
+        
+        // check to type of the variable first
+
+        if(typeof text !== 'string'){
+            throw new Error('Parameter must be a string');
+        }
+
+        // get the first letter
+        let firstLetter = text.charAt(0);
+
+        // slice the rest of the word
+
+        let remainingLetters = text.slice(1);
+
+        // make sure remaining letters lowercased
+
+        remainingLetters = remainingLetters.toLowerCase();
+
+        // uppercase the first letter
+
+        firstLetter = firstLetter.toUpperCase();
+
+        // return the first letter capitalized
+        return firstLetter + remainingLetters;
+
+        }
+
+
+        function lastLetter(text){
+            if(typeof text ==! 'string'){
+                // check type of first
+               throw new Error('Parameter must be string');
+            }
+            // return last letter
+            return text.at(-1);
+        }
+
+        // test functions
+        console.log(add7(12));
+        console.log(multiply(2,3));
+        console.log(capitalize("WasSup!"));
+        // console.log(capitalize(12)); not a string
+        console.log(lastLetter("Iron Man"));
+
+
+    </script>
+</body>
+</html>
